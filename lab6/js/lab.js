@@ -3,15 +3,18 @@
  * Created: April 25, 2022
  */
 
-var myTransport = ["walking", "bus"];
-var myMainRide = {
+myTransport = ["walking", "bus"];
+
+myMainRide = {
   make: "Ford",
   model: "Mustang",
   color: "White",
   year: 1965,
-  age: return 2022 - myMainRide.year;
-};
+  age: function () {
+    return 2022-year;
+}
+}
 
-document.writeIn("How I actually get around: ", myTransport, "</br>");
-document.writeIn("My Main <i> Ride: <pre>",
+document.writeln("How I actually get around: " + myTransport + "</br>");
+document.writeln("My Main <i> Ride: <pre>",
   JSON.stringify(myMainRide, null, '\t'), "</pre>");
